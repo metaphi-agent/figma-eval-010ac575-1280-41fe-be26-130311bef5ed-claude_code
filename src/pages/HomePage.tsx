@@ -12,7 +12,7 @@ export default function HomePage() {
     {
       image: 'https://images.unsplash.com/photo-1496449903678-68ddcb189a24?w=600&h=400&fit=crop',
       excerpt:
-        'When the last 'natural' had been declared, and the profit and loss account of fish and expenses adjusted to the satisfaction of all parties; Mr. Bob Sawyer rang for supper, and the visitors.',
+        "When the last 'natural' had been declared, and the profit and loss account of fish and expenses adjusted to the satisfaction of all parties; Mr. Bob Sawyer rang for supper, and the visitors.",
     },
   ];
 
