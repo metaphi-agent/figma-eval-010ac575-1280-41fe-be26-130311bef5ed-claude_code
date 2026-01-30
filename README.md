@@ -1,51 +1,68 @@
 # Startup Landing Pages
 
-A React-based landing page collection built from Figma designs, featuring blog listing and article pages.
+A production-ready React implementation of landing page templates from Figma design.
 
 ## Features
 
-- 🎨 Built with React + TypeScript + Vite
-- 💅 Styled with Tailwind CSS v4
-- 📱 Fully responsive design
-- ⚡ Optimized performance with lazy loading
-- 🎯 Two complete pages: Blog listing and Article detail
+- **Article Page**: Purple hero header with user profile and article content
+- **Blog Page**: Main article with sidebar (Last Seen, Newsletter, Most Popular sections)
+- **Responsive Design**: Following Figma specifications
+- **Modern Stack**: React 19, Vite, Tailwind CSS v4
 
-## Live Preview
+## Preview
 
-[View Live Preview](https://ta-01kg6s1kzt1tt8epsw99szar4d-5173.wo-j9bazkzqc0avg7lj77m9oourb.w.modal.host)
-
-## Pages
-
-- **Home** (`/`) - Blog listing page with sidebar, newsletter signup, and popular posts
-- **Article** (`/article`) - Blog post page with hero section, author profile, and article content
+Live preview available at: https://ta-01kg7y53mvrsztt6ey0xh8xaxm-5173.wo-j58o0qzm0tayp7l87pn2ig4h1.w.modal.host
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
 ```bash
-# Install dependencies
 npm install
+```
 
-# Run development server
+### Development
+
+```bash
 npm run dev
+```
 
-# Build for production
+### Build
+
+```bash
 npm run build
 ```
 
-## Design Credits
+## Project Structure
 
-Based on [Free Figma Website Landing Pages - Startup App](https://www.figma.com/design/V9fFusRtr1gh5rC8dmMwVQ/Free-Figma-Website-Landing-Pages---Startup-App--Community-)
+```
+src/
+├── components/
+│   ├── ui/           # Button, PostCard, NewsletterForm
+│   └── blocks/       # HeroHeader, UserProfile, Sidebar
+├── pages/           # ArticlePage, BlogPage
+├── App.tsx          # Main app with navigation
+├── main.tsx         # Entry point
+└── index.css        # Tailwind CSS with design tokens
+```
 
-## Technology Stack
+## Design Tokens
 
-- React 19
-- TypeScript
-- Vite 6
-- Tailwind CSS 4
-- React Router DOM 7
-- Lucide React (icons)
-- Framer Motion
+Colors, typography, and spacing extracted from Figma:
 
----
+- **Primary**: #2F1893 (Dark), #E93A7D (Action)
+- **Text**: #1E0D63 (Heading), rgba(21, 20, 57, 0.4) (Body)
+- **Font**: DM Sans (Regular, Medium, Bold)
 
-🤖 Generated with Claude Code
+## Figma Source
+
+[Free Figma Website Landing Pages - Startup App](https://www.figma.com/design/V9fFusRtr1gh5rC8dmMwVQ/Free-Figma-Website-Landing-Pages---Startup-App--Community-)
+
+## License
+
+MIT
