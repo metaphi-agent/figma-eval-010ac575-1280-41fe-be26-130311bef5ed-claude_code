@@ -1,0 +1,73 @@
+{
+  "colors": {
+    "primary": {
+      "purple": "#2F1893",
+      "purple_dark": "#1F0D62"
+    },
+    "text": {
+      "primary": "#1F0D62",
+      "secondary": "rgba(21, 20, 57, 0.4)",
+      "white": "#FFFFFF"
+    },
+    "background": {
+      "white": "#FFFFFF",
+      "light": "#F3F3F3",
+      "purple": "#2F1893"
+    },
+    "accent": {
+      "teal": "#00D9C0",
+      "pink": "#FF6B9D"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "DM Sans"
+    },
+    "fontSize": {
+      "hero": "58px",
+      "h1": "42px",
+      "h2": "22px",
+      "body": "16px",
+      "caption": "14px"
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "lineHeight": {
+      "hero": "70px",
+      "heading": "32px",
+      "body": "26px"
+    },
+    "letterSpacing": {
+      "hero": "-1px",
+      "caps": "2px",
+      "heading": "0px",
+      "body": "0px"
+    }
+  },
+  "spacing": {
+    "container": "1400px",
+    "content": "770px",
+    "grid": {
+      "columns": 12,
+      "columnWidth": "70px",
+      "gutter": "30px"
+    }
+  },
+  "pages": [
+    {
+      "name": "page_1",
+      "node_id": "153:184",
+      "route": "/article",
+      "description": "Blog post/article page with hero, author profile, and article content"
+    },
+    {
+      "name": "page_2",
+      "node_id": "153:80",
+      "route": "/",
+      "description": "Blog listing page with featured articles, sidebar, and newsletter signup"
+    }
+  ]
+}

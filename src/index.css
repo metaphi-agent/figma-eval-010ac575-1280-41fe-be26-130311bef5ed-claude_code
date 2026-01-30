@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Colors */
+  --color-primary: #2F1893;
+  --color-primary-dark: #1F0D62;
+  --color-text-primary: #1F0D62;
+  --color-text-secondary: rgba(21, 20, 57, 0.4);
+  --color-bg-light: #F3F3F3;
+  --color-accent-teal: #00D9C0;
+  --color-accent-pink: #FF6B9D;
+
+  /* Spacing */
+  --spacing-content: 770px;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+
+  .content-container {
+    max-width: var(--spacing-content);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
