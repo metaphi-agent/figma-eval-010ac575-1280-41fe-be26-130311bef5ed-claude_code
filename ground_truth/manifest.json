@@ -5,14 +5,16 @@
     {
       "name": "page_1",
       "node_id": "153:184",
-      "gt_image": "page_1.png",
-      "target_route": "/article"
+      "gt_image": "153-184.png",
+      "target_route": "/article",
+      "description": "Article page with purple hero header, user profile section, and article content with bullet points"
     },
     {
       "name": "page_2",
       "node_id": "153:80",
-      "gt_image": "page_2.png",
-      "target_route": "/"
+      "gt_image": "153-80.png",
+      "target_route": "/blog",
+      "description": "Blog layout with main article on left and sidebar with Last Seen, Newsletter form, and Most Popular sections"
     }
   ]
 }

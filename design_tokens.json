@@ -1,0 +1,74 @@
+{
+  "colors": {
+    "primary": {
+      "dark": "#2F1893",
+      "third": "#E93A7D"
+    },
+    "text": {
+      "heading": "#1E0D63",
+      "body": "rgba(21, 20, 57, 0.4)",
+      "white": "#FFFFFF"
+    },
+    "background": {
+      "dark": "#2F1893",
+      "light": "#FFFFFF",
+      "grey": "#EBEBE4"
+    },
+    "action": {
+      "primary": "#2F1893",
+      "third": "#E93A7D"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "DM Sans",
+      "icon": "FontAwesome"
+    },
+    "fontSize": {
+      "h2Header": "58px",
+      "h3Title": "42px",
+      "h5Lead": "22px",
+      "article": "18px",
+      "paragraph": "16px",
+      "label": "14px",
+      "button": "18px"
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "lineHeight": {
+      "h2Header": "70px",
+      "h3Title": "52px",
+      "h5Lead": "32px",
+      "article": "28px",
+      "paragraph": "26px",
+      "label": "26px",
+      "button": "26px"
+    },
+    "letterSpacing": {
+      "h2Header": "-1px",
+      "h3Title": "-0.4px",
+      "label": "2px",
+      "default": "0"
+    }
+  },
+  "spacing": {
+    "containerWidth": "1400px",
+    "contentWidth": "1170px",
+    "gutter": "30px",
+    "section": {
+      "vertical": "80px"
+    }
+  },
+  "borderRadius": {
+    "small": "10px",
+    "large": "100px"
+  },
+  "grid": {
+    "columns": 12,
+    "columnWidth": "70px",
+    "gutter": "30px"
+  }
+}
