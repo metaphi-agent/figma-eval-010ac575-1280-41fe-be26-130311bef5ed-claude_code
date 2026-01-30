@@ -1,44 +1,44 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
-import clsx from 'clsx';
+import React from 'react';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'teal';
+interface ButtonProps {
+  children: React.ReactNode;
+  variant?: 'primary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
-  children: ReactNode;
+  className?: string;
+  onClick?: () => void;
+  type?: 'button' | 'submit';
 }
 
-export default function Button({
+export const Button: React.FC<ButtonProps> = ({
+  children,
   variant = 'primary',
   size = 'md',
-  children,
-  className,
-  disabled,
-  ...props
-}: ButtonProps) {
+  className = '',
+  onClick,
+  type = 'button',
+}) => {
+  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-150';
+
+  const variantStyles = {
+    primary: 'bg-[#E93A7D] text-white hover:opacity-90 hover:-translate-y-0.5 rounded-full',
+    outline: 'bg-transparent border-2 border-[#EBEAED] text-[rgba(21,20,57,0.4)] hover:border-[#2F1893] hover:text-[#1E0D63] rounded-[10px]',
+  };
+
+  const sizeStyles = {
+    sm: 'px-4 py-2 text-sm',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-lg',
+  };
+
   return (
     <button
-      className={clsx(
-        'rounded-full font-medium transition-all duration-150',
-        'disabled:opacity-50 disabled:cursor-not-allowed',
-        {
-          // Variants
-          'bg-[--color-primary] text-white hover:bg-[--color-primary-dark] active:scale-95':
-            variant === 'primary',
-          'bg-transparent border-2 border-[--color-primary] text-[--color-primary] hover:bg-[--color-primary] hover:text-white':
-            variant === 'secondary',
-          'bg-[--color-accent-teal] text-white hover:brightness-110 active:scale-95':
-            variant === 'teal',
-          // Sizes
-          'px-4 py-2 text-sm': size === 'sm',
-          'px-6 py-3 text-base': size === 'md',
-          'px-8 py-4 text-lg': size === 'lg',
-        },
-        className
-      )}
-      disabled={disabled}
-      {...props}
+      type={type}
+      onClick={onClick}
+      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}
     </button>
   );
-}
+};
+
+export default Button;
