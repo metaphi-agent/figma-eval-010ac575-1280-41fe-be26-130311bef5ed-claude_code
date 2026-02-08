@@ -20,6 +20,11 @@
     "preview_url_at": "2026-01-30T17:15:34.110263+00:00"
   },
   "notes": [],
-  "updated_at": "2026-02-08T09:48:17.165491+00:00",
-  "preview_url": "https://ta-01kgyadb1w3tc0333bkf5rjjx4-5173.wo-eyhq0l9st6hyyobpcwkpcwtns.w.modal.host"
+  "updated_at": "2026-02-08T09:49:56.932201+00:00",
+  "preview_url": "https://ta-01kgyadb1w3tc0333bkf5rjjx4-5173.wo-eyhq0l9st6hyyobpcwkpcwtns.w.modal.host",
+  "deployed_url": "https://storage.googleapis.com/metaphi-agent/figma-claude_code-agent/010ac575-1280-41fe-be26-130311bef5ed/index.html",
+  "github_repo_url": "https://github.com/metaphi-agent/figma-eval-010ac575-1280-41fe-be26-130311bef5ed-claude_code",
+  "completed_steps": [
+    "Step 7: Deploy & Push"
+  ]
 }
